@@ -1,8 +1,42 @@
-<div class="fixed bg-amber-100 w-full h-full">
-    this is the background
+---
+import { Image } from 'astro:assets';
+
+import realisticCityGreen from '../assets/background/RealisticCityRenderGreenVersion.png'
+import blenderScreenshot from '../assets/background/blender_bvCYWrDjN2.png'
+
+let backgrounds = [
+    {
+        obj: realisticCityGreen,
+        alt: "A city made in blender with a green filter on",
+        accent: "3"
+    },
+    {
+        obj: blenderScreenshot,
+        alt: "A screenshot of a blender cycles project",
+        accent: "3"
+    }
+]
+
+let background = Math.floor(Math.random() * backgrounds.length)
+
+---
+
+<div class="fixed bg-amber-100 w-screen h-screen">
+    <Image
+        src={backgrounds[background].obj}
+        id="bg-render" 
+        alt={backgrounds[background].alt}
+    />
 </div>
 
 
 <style>
+    #bg-render {
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        @apply w-screen h-screen object-cover
+    }
+
     
 </style>

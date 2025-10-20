@@ -1,0 +1,36 @@
+<script>
+    import realisticCityGreen from '../assets/background/RealisticCityRenderGreenVersion.png'
+    import blenderScreenshot from '../assets/background/RealisticCityRender.png'
+    
+    let backgrounds = [
+        {
+            obj: realisticCityGreen,
+            alt: "A city made in blender with a green filter on",
+            accent: "3"
+        },
+        {
+            obj: blenderScreenshot,
+            alt: "A screenshot of a blender cycles project",
+            accent: "3"
+        }
+    ]
+    
+    let background = Math.floor(Math.random() * backgrounds.length)
+</script>
+
+<div class="fixed bg-amber-100 w-screen h-screen">
+    <img
+        src={backgrounds[background].obj.src}
+        id="bg-render" 
+        alt={backgrounds[background].alt}
+    />
+</div>
+
+<style lang="postcss">
+    #bg-render {
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        @apply w-screen h-screen object-cover;
+    }
+</style>

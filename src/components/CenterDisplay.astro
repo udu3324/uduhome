@@ -8,7 +8,7 @@ import Sidebar from "./Sidebar.astro";
             <Sidebar/>
 
             <div class="bg-stone-950/70 text-white w-full p-5 mr-3">
-                <span class="text-7xl">@udu3324</span>
+                <span id="reactive-text-size">@udu3324</span>
                 <p class="text-right">"hello"</p>
                 <p>i create random things</p>
                 <br>
@@ -56,4 +56,14 @@ import Sidebar from "./Sidebar.astro";
 <style>
     @reference "tailwindcss";
 
+    #reactive-text-size {
+        @apply text-7xl font-bold
+    }
+
+    @media only screen and (max-device-width: 580px) {
+        #reactive-text-size {
+            @apply text-4xl
+        }
+    }
+    
 </style>

@@ -102,4 +102,6 @@
 
 :root {
   font-family: 'NebulaSans', sans-serif;
+  --accent-color: #000000;
+  --accent-color-dark: calc(var(--accent-color) - 20%);
 }

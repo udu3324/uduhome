@@ -1,59 +1,101 @@
 <script>
     import { onMount } from 'svelte';
 
-    const photos = [
-        'vn_bodyofwater.JPG',
-        'vn_city.JPG',
-        'vn_watermountain.JPG',
-        'vn_beach.JPG',
-        'vn_streets.JPG',
-        'ca_recordstore.JPG',
-        'tx_bay.JPG',
-        'tx_bay2.JPG',
-        'ak_mountains.JPG',
-        'ak_mountains2.JPG',
-        'ca_cloudflare.JPG',
-        'ca_salesforce.JPG'
-    ]
+    const images = import.meta.glob("../assets/background/*.jpg", { eager: true })
 
     const backgrounds = [
         {
-            file: "vn_bodyofwater.JPG",
+            file: "ak_mountains.jpg",
+            tag: [""],
+            alt: "",
+            accent: "#857c77"
+        },
+        {
+            file: "ak_mountains2.jpg",
+            tag: [""],
+            alt: "",
+            accent: "#84a560"
+        },
+        {
+            file: "ca_cloudflare.jpg",
+            tag: [""],
+            alt: "",
+            accent: "#ddafb2"
+        },
+        {
+            file: "ca_recordstore.jpg",
+            tag: [""],
+            alt: "",
+            accent: "#45392f"
+        },
+        {
+            file: "ca_salesforce.jpg",
+            tag: [""],
+            alt: "",
+            accent: "#98bcb3"
+        },
+        {
+            file: "tx_bay.jpg",
+            tag: [""],
+            alt: "",
+            accent: "#eed6b0"
+        },
+        {
+            file: "tx_bay2.jpg",
+            tag: [""],
+            alt: "",
+            accent: "#3f525d"
+        },
+        {
+            file: "vn_beach.jpg",
+            tag: [""],
+            alt: "",
+            accent: "#f1e0d6"
+        },
+        {
+            file: "vn_bodyofwater.jpg",
             tag: ["nature"],
             alt: "body of water",
             accent: "#79803b"
         },
         {
-            file: "vn_city.JPG",
+            file: "vn_city.jpg",
             tag: ["urban"],
             alt: "bright lights of city development",
             accent: "#030e17"
         },
         {
-            file: "vn_watermountain.JPG",
+            file: "vn_streets.jpg",
+            tag: [""],
+            alt: "",
+            accent: "#020c1a"
+        },
+        {
+            file: "vn_watermountain.jpg",
             tag: ["nature"],
             alt: "mountain with water",
             accent: "#aac0c6"
         }
     ]
 
+    const imageMap = Object.fromEntries(
+        Object.entries(images).map(([path, img]) => {
+            const filename = path.split('/').pop()
+            const src = img.default.src
+            return [filename, src]
+        })
+    )
+
+    backgrounds.forEach(bg => {
+        bg.url = imageMap[bg.file]
+    })
+
     let background = -1
-    let imageURL = ''
 
     onMount(async () => {
         background = Math.floor(Math.random() * backgrounds.length)
 
         document.documentElement.style.cssText = "--accent-color: " + backgrounds[background].accent
-
-        const img = await import(`../assets/background/${backgrounds[background].file}`)
-        imageURL = img.default.src
-
-        //console.log("url is " + backgrounds[background].file)
-        //console.log(imageURL)
-        //console.log(imageURL.src)
-
-        
-        // console.log("bg is", background)
     })
 </script>
 
@@ -62,7 +104,7 @@
     <div class="w-screen h-screen bg-black"></div>
     {:else}
     <img
-        src={imageURL}
+        src={backgrounds[background].url}
         id="bg-render"
         loading="lazy"
         alt={backgrounds[background].alt}

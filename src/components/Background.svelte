@@ -92,6 +92,7 @@
 
     backgrounds.forEach(bg => {
         bg.url = imageMap[bg.file]
+        if (!bg.url) console.warn('Missing URL for', bg.file);
     })
 
     let background = -1
@@ -100,6 +101,9 @@
         background = Math.floor(Math.random() * backgrounds.length)
 
         document.documentElement.style.cssText = "--accent-color: " + backgrounds[background].accent
+
+        console.log("loading background")
+        console.log(backgrounds[background])
     })
 </script>
 

@@ -1,0 +1,74 @@
+[
+    {
+        "file": "ak_mountains.jpg",
+        "tag": [""],
+        "alt": "",
+        "accent": "#857c77"
+    },
+    {
+        "file": "ak_mountains2.jpg",
+        "tag": [""],
+        "alt": "",
+        "accent": "#84a560"
+    },
+    {
+        "file": "ca_cloudflare.jpg",
+        "tag": [""],
+        "alt": "",
+        "accent": "#ddafb2"
+    },
+    {
+        "file": "ca_recordstore.jpg",
+        "tag": [""],
+        "alt": "",
+        "accent": "#45392f"
+    },
+    {
+        "file": "ca_salesforce.jpg",
+        "tag": [""],
+        "alt": "",
+        "accent": "#98bcb3"
+    },
+    {
+        "file": "tx_bay.jpg",
+        "tag": [""],
+        "alt": "",
+        "accent": "#eed6b0"
+    },
+    {
+        "file": "tx_bay2.jpg",
+        "tag": [""],
+        "alt": "",
+        "accent": "#3f525d"
+    },
+    {
+        "file": "vn_beach.jpg",
+        "tag": [""],
+        "alt": "",
+        "accent": "#f1e0d6"
+    },
+    {
+        "file": "vn_bodyofwater.jpg",
+        "tag": ["nature"],
+        "alt": "body of water",
+        "accent": "#79803b"
+    },
+    {
+        "file": "vn_city.jpg",
+        "tag": ["urban"],
+        "alt": "bright lights of city development",
+        "accent": "#030e17"
+    },
+    {
+        "file": "vn_streets.jpg",
+        "tag": [""],
+        "alt": "",
+        "accent": "#020c1a"
+    },
+    {
+        "file": "vn_watermountain.jpg",
+        "tag": ["nature"],
+        "alt": "mountain with water",
+        "accent": "#aac0c6"
+    }
+]

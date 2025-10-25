@@ -81,7 +81,11 @@
     const imageMap = Object.fromEntries(
         Object.entries(images).map(([path, img]) => {
             const filename = path.split('/').pop()
-            const src = img.default.src
+            const src = // what the fuc
+                img?.src ??
+                img?.default?.src ??
+                img?.default ??
+                '';
             return [filename, src]
         })
     )

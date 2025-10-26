@@ -1,7 +1,13 @@
+---
+import Tooltip from "./Tooltip.astro";
+---
+
 <div class="ml-3 p-3 bg-stone-950/50 backdrop-blur-xs flex flex-col">
     <div id="accent-cube"></div>
 
-    <button id="button-nav">discord</button>
+    <Tooltip text="@udu3324" paste="udu3324">
+        <span id="button-nav">discord</span>
+    </Tooltip>
     <a href="https://github.com/udu3324" target="_blank" id="button-nav">github</a>
     <a href="https://www.youtube.com/@udu3324" target="_blank" id="button-nav">youtube</a>
     <a href="https://steamcommunity.com/id/Minot_/" target="_blank" id="button-nav">steam</a>
@@ -10,6 +16,7 @@
     <br>
 
     <a href="https://ko-fi.com/udu3324"  target="_blank" id="button-nav">ko-fi</a>
+
 </div>
 
 <style>

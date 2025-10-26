@@ -1,7 +1,6 @@
-<div class="ml-3 p-3 bg-stone-950/50 flex flex-col">
-    <div id="accent-cube">
-        
-    </div>
+<div class="ml-3 p-3 bg-stone-950/50 backdrop-blur-xs flex flex-col">
+    <div id="accent-cube"></div>
+
     <button id="button-nav">discord</button>
     <a href="https://github.com/udu3324" target="_blank" id="button-nav">github</a>
     <a href="https://www.youtube.com/@udu3324" target="_blank" id="button-nav">youtube</a>
@@ -17,7 +16,8 @@
     @reference "tailwindcss";
 
     #button-nav {
-        @apply w-24 text-white cursor-pointer text-right;
+        @apply w-24 text-white cursor-pointer text-right font-bold;
+        color: var(--accent-lighter)
     }
 
     #accent-cube {

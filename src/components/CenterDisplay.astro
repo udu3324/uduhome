@@ -1,4 +1,5 @@
 ---
+import Bottom from "./Bottom.astro";
 import Sidebar from "./Sidebar.astro";
 ---
 
@@ -7,7 +8,7 @@ import Sidebar from "./Sidebar.astro";
         <div class="flex">
             <Sidebar/>
 
-            <div class="bg-stone-950/70 text-white w-full p-5 mr-3">
+            <div class="bg-stone-950/70 backdrop-blur-xs text-white w-full p-5 mr-3">
                 <span id="reactive-text-size">@udu3324</span>
                 <p class="text-right">"hello"</p>
                 <p>i create random things</p>
@@ -45,10 +46,8 @@ import Sidebar from "./Sidebar.astro";
                 <p>aaa</p>
             </div>
         </div>
-        <div class="bg-stone-950/90 text-white mt-32 p-5 mx-3">
-            <p>bottom</p>
-        </div>
-        
+
+        <Bottom/>
     </div>
 </div>
 

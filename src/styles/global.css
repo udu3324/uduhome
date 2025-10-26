@@ -100,8 +100,13 @@
   --font-nebula: 'NebulaSans', sans-serif;
 }
 
+/* ty https://medium.com/@alexdev82/css-relative-colors-the-game-changing-feature-i-wish-id-known-earlier-12c28b81b3bf */
+
 :root {
   font-family: 'NebulaSans', sans-serif;
   --accent-color: #000000;
-  --accent-color-dark: calc(var(--accent-color) - 20%);
+  --accent-lighter: hsl(from var(--accent-color) h s calc(l + 15));
+  --accent-darker: hsl(from var(--accent-color) h s calc(l - 15));
+  --accent-muted: hsl(from var(--accent-color) h calc(s - 30) l);
+  --accent-vibrant: hsl(from var(--accent-color) h calc(s + 20) l);
 }

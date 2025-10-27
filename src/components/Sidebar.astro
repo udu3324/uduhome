@@ -3,32 +3,54 @@ import Tooltip from "./Tooltip.astro";
 ---
 
 <div class="ml-3 p-3 bg-stone-950/50 backdrop-blur-xs flex flex-col">
-    <div id="accent-cube"></div>
+    <div id="accent-cube"/>
 
     <Tooltip text="@udu3324" paste="udu3324">
         <span id="button-nav">discord</span>
     </Tooltip>
-    <a href="https://github.com/udu3324" target="_blank" id="button-nav">github</a>
-    <a href="https://www.youtube.com/@udu3324" target="_blank" id="button-nav">youtube</a>
-    <a href="https://steamcommunity.com/id/Minot_/" target="_blank" id="button-nav">steam</a>
-    <a href="https://bandcamp.com/jestors" target="_blank" id="button-nav">bandcamp</a>
-
+    <Tooltip text="primary">
+        <a href="https://github.com/udu3324" target="_blank" id="button-nav">github</a>
+    </Tooltip>
+    <Tooltip text="dead">
+        <a href="https://www.youtube.com/@udu3324" target="_blank" id="button-nav">youtube</a>
+    </Tooltip>
+    <Tooltip text="games i got">
+        <a href="https://steamcommunity.com/id/Minot_/" target="_blank" id="button-nav">steam</a>
+    </Tooltip>
+    <Tooltip text="music stuff">
+        <a href="https://bandcamp.com/jestors" target="_blank" id="button-nav">bandcamp</a>
+    </Tooltip>
+    
     <br>
 
-    <a href="https://ko-fi.com/udu3324"  target="_blank" id="button-nav">ko-fi</a>
-
+    <Tooltip text="❤️">
+        <a href="https://ko-fi.com/udu3324"  target="_blank" id="button-nav">ko-fi</a>
+    </Tooltip>
+    
 </div>
 
 <style>
     @reference "tailwindcss";
 
+    #accent-cube {
+        @apply w-24 h-24 rounded-lg mb-14;
+        background-color: var(--accent-color)
+    }
+
+    @media only screen and (max-width: 700px) {
+        #accent-cube {
+            @apply mb-6
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        #accent-cube {
+            @apply mb-12
+        }
+    }
+
     #button-nav {
         @apply w-24 text-white cursor-pointer text-right font-bold;
         color: var(--accent-lighter)
     }
-
-    #accent-cube {
-        @apply w-24 h-24 rounded-lg mb-3;
-        background-color: var(--accent-color)
-    }
+    
 </style>

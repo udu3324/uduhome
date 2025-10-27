@@ -1,5 +1,6 @@
 ---
 import { getCommitHash, getBranch, getDate } from "../utils/Git";
+import Tooltip from "./Tooltip.astro";
 
 let commitHash = getCommitHash() || import.meta.env.VERCEL_GIT_COMMIT_SHA || "commit n/a"
 //let branch = getBranch() || import.meta.env.VERCEL_GIT_COMMIT_REF || "branch n/a"
@@ -9,12 +10,14 @@ let url = `https://github.com/udu3324/uduhome/commit/${commitHash}`
 ---
 
 <div class="bg-stone-950/80 backdrop-blur-md text-white mt-32 p-5 mx-3">
-    <a href={url} target="_blank">
-        commit 
-        <span id="code">{commitHash.slice(0, 7)} </span>
-        @
-        <span id="code">{date}</span>
-    </a>
+    <Tooltip text="you are a certified nerd btw">
+            <a href={url} target="_blank">
+            commit 
+            <span id="code">{commitHash.slice(0, 7)} </span>
+            @
+            <span id="code">{date}</span>
+        </a>
+    </Tooltip>
     <div>
 
     </div>

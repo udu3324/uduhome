@@ -1,4 +1,5 @@
 ---
+import Body from "./Body.astro";
 import Bottom from "./Bottom.astro";
 import Sidebar from "./Sidebar.astro";
 ---
@@ -8,61 +9,9 @@ import Sidebar from "./Sidebar.astro";
         <div class="flex">
             <Sidebar/>
 
-            <div class="bg-stone-950/70 backdrop-blur-xs text-white w-full p-5 mr-3">
-                <span id="reactive-text-size">@udu3324</span>
-                <p class="text-right">"hello"</p>
-                <p>i create random things</p>
-                <br>
-                <p>lorum ipsum blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                <br>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-                <p>aaa</p>
-            </div>
+            <Body/>
         </div>
 
         <Bottom/>
     </div>
 </div>
-
-
-<style>
-    @reference "tailwindcss";
-
-    #reactive-text-size {
-        @apply text-7xl font-bold
-    }
-
-    @media only screen and (max-device-width: 580px) {
-        #reactive-text-size {
-            @apply text-4xl
-        }
-    }
-    
-</style>

@@ -19,7 +19,9 @@ const { text, paste } = Astro.props
     }
 
     document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById(`handle${paste}`).addEventListener("click", handleClick)
+        if (paste) {
+            document.getElementById(`handle${paste}`).addEventListener("click", handleClick)
+        }
     })
     
 </script>
@@ -41,7 +43,7 @@ const { text, paste } = Astro.props
     @reference "tailwindcss";
 
     #tooltip {
-        @apply w-max font-mono px-2 py-1 mb-2 bg-black rounded-tl-lg rounded-tr-lg rounded-bl-lg;
+        @apply w-max font-mono px-2 py-1 mb-2 bg-black/90 rounded-tl-lg rounded-tr-lg rounded-bl-lg;
         color: var(--accent-lighter);
     }
 </style>

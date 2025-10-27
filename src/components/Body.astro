@@ -1,0 +1,83 @@
+---
+import Project from "./Project.astro";
+
+import stm32pe from '../assets/projects/stm32pe.jpg'
+import typsnd from '../assets/projects/typsnd.png'
+import mp3mark from '../assets/projects/mp3mark.png'
+import gridfix from '../assets/projects/gridfix.png'
+import cirtemosi from '../assets/projects/cirtemosi.png'
+
+
+---
+
+<div class="bg-stone-950/70 backdrop-blur-xs text-white w-full p-5 mr-3">
+    <span id="reactive-text-size">@udu3324</span>
+    <span id="pronounce" class="font-mono">/juːdiːjuː/</span>
+    <br>
+    <br>
+    <p>"i create random things"</p>
+    
+    <br>
+
+    <p>
+        Hello! I go by my screen name udu3324 or udu for short. 
+        You can find all of the platforms I use on the right. 
+        I create things ranging from utility Minecraft mods to 
+        useful electronic devices. I mainly use Discord as a main point 
+        of contact with Github being my secondary platform.
+    </p>
+    
+    <h1>Projects I've Worked On</h1>
+    <div class="flex flex-wrap pt-2">
+        <Project
+            img={stm32pe} 
+            title="stm32pe midi controller" 
+            description="a midi controller that is more expressive than usual" 
+            url="https://github.com/udu3324/stm32pe-midi"
+            tags={["hardware", "music"]}
+        />
+        <Project
+            img={mp3mark} 
+            title="mp3mark" 
+            description="a website that lets you mark up mp3 files" 
+            url="https://github.com/udu3324/mp3mark"
+            tags={["website", "music"]}
+        />
+        <Project
+            img={typsnd} 
+            title="typsnd" 
+            description="a nodejs chat app that looks like a popular messaging app" 
+            url="https://github.com/udu3324/typsnd"
+            tags={["website", "chatting"]}
+        />
+        <Project
+            img={gridfix} 
+            title="gridfix" 
+            description="a mod that renders a grid for referencing stuff" 
+            url="https://github.com/udu3324/gridfix"
+            tags={["minecraft", "utility"]}
+        />
+    </div>
+</div>
+
+<style>
+    @reference "tailwindcss";
+
+    #pronounce {
+        color: var(--accent-darker);
+    }
+
+    #reactive-text-size {
+        @apply text-7xl font-bold
+    }
+
+    @media only screen and (max-width: 700px) {
+        #reactive-text-size {
+            @apply text-4xl
+        }
+    }
+
+    h1 {
+        @apply text-xl font-bold pt-5
+    }
+</style>

@@ -1,0 +1,17 @@
+---
+import Image from "astro/components/Image.astro";
+
+const { img, title, description, url, tags } = Astro.props
+
+---
+
+<a href={url} target="_blank">
+    <div id="post">
+        <Image src={img} alt="stm32pe"/>
+        <div class="p-3">
+            <span class="font-bold">{title}</span>
+            <br>
+            <span class="text-sm">{description}</span>
+        </div>
+    </div>
+</a>

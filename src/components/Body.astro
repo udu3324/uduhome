@@ -5,6 +5,8 @@ import stm32pe from '../assets/projects/stm32pe.jpg'
 import typsnd from '../assets/projects/typsnd.png'
 import mp3mark from '../assets/projects/mp3mark.png'
 import gridfix from '../assets/projects/gridfix.png'
+import slider from '../assets/projects/slider-synth.png'
+import gift from '../assets/projects/gift-tag.jpg'
 import cirtemosi from '../assets/projects/cirtemosi.png'
 
 
@@ -15,7 +17,7 @@ import cirtemosi from '../assets/projects/cirtemosi.png'
     <span id="pronounce" class="font-mono">/juːdiːjuː/</span>
     <br>
     <br>
-    <p>"i create random things"</p>
+    <p class="italic">“i create random things”</p>
     
     <br>
 
@@ -23,12 +25,11 @@ import cirtemosi from '../assets/projects/cirtemosi.png'
         Hello! I go by my screen name udu3324 or udu for short. 
         You can find all of the platforms I use on the right. 
         I create things ranging from utility Minecraft mods to 
-        useful electronic devices. I mainly use Discord as a main point 
-        of contact with Github being my secondary platform.
+        useful electronic devices. 
     </p>
     
     <h1>Projects I've Worked On</h1>
-    <div class="flex flex-wrap pt-2">
+    <div class="flex flex-wrap gap-3 pt-2">
         <Project
             img={stm32pe} 
             title="stm32pe midi controller" 
@@ -56,6 +57,13 @@ import cirtemosi from '../assets/projects/cirtemosi.png'
             description="a mod that renders a grid for referencing stuff" 
             url="https://github.com/udu3324/gridfix"
             tags={["minecraft", "utility"]}
+        />
+        <Project
+            img={gift} 
+            title="gift tag" 
+            description="a neat twist on the typical gift tags used on presents" 
+            url=""
+            tags={["hardware", "fun"]}
         />
     </div>
 </div>

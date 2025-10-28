@@ -3,7 +3,9 @@ import Tooltip from "./Tooltip.astro";
 ---
 
 <div class="ml-3 p-3 bg-stone-950/50 backdrop-blur-xs flex flex-col">
-    <div id="accent-cube"/>
+    <div class="mb-14">
+        <a href="."><div id="accent-cube"/></a>
+    </div>
 
     <Tooltip text="@udu3324" paste="udu3324">
         <span id="button-nav">discord</span>
@@ -33,7 +35,7 @@ import Tooltip from "./Tooltip.astro";
     @reference "tailwindcss";
 
     #accent-cube {
-        @apply w-24 h-24 rounded-lg mb-14;
+        @apply w-24 h-24 rounded-lg;
         background-color: var(--accent-color)
     }
 
@@ -50,7 +52,8 @@ import Tooltip from "./Tooltip.astro";
 
     #button-nav {
         @apply w-24 text-white cursor-pointer text-right font-bold;
-        color: var(--accent-lighter)
+        @apply hover:underline decoration-2;
+        color: var(--accent-lighter);
     }
-    
+
 </style>

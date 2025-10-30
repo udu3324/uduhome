@@ -6,17 +6,17 @@ const { img, title, description, url } = Astro.props
 ---
 
 <a href={url} target="_blank">
-    <div id="post">
+    <div id="post" class="relative group">
+        <div class="p-3 absolute hidden group-hover:block bg-black/50">
+            <span class="font-bold">{title}</span>
+            <br>
+            <span class="text-sm">{description}</span>
+        </div>
         <Image
             src={img} 
             alt="stm32pe" 
             width="185" 
             height="185"
         />
-        <div class="p-3">
-            <span class="font-bold">{title}</span>
-            <br>
-            <span class="text-sm">{description}</span>
-        </div>
     </div>
 </a>

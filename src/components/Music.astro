@@ -1,22 +1,31 @@
 ---
 import Image from "astro/components/Image.astro";
 
-const { img, title, description, url } = Astro.props
+const { mbid, commentary, url } = Astro.props
+
+let img = `https://coverartarchive.org/release-group/${mbid}/front-250`
 
 ---
 
 <a href={url} target="_blank">
-    <div id="post" class="relative group">
-        <div class="p-3 absolute hidden group-hover:block bg-black/50">
-            <span class="font-bold">{title}</span>
-            <br>
-            <span class="text-sm">{description}</span>
+    <div id="post" class="relative group w-[185px] h-[185px]">
+        <div class="p-2 absolute hidden group-hover:block bg-black/50 w-full">
+            <span class="text-sm">“{commentary}”</span>
         </div>
         <Image
             src={img} 
             alt="stm32pe" 
+            loading="lazy"
             width="185" 
             height="185"
         />
     </div>
 </a>
+
+<style>
+    @reference "tailwindcss";
+
+    #post {
+        background-color: var(--accent-darker);
+    }
+</style>

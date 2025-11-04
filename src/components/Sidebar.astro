@@ -7,28 +7,29 @@ import Tooltip from "./Tooltip.astro";
         <a href="."><div id="accent-cube" class="mb-14"/></a>
     </div>
 
-    <Tooltip text="@udu3324" paste="udu3324">
-        <span id="button-nav">discord</span>
-    </Tooltip>
-    <Tooltip text="primary">
-        <a href="https://github.com/udu3324" target="_blank" id="button-nav">github</a>
-    </Tooltip>
-    <Tooltip text="dead">
-        <a href="https://www.youtube.com/@udu3324" target="_blank" id="button-nav">youtube</a>
-    </Tooltip>
-    <Tooltip text="games i got">
-        <a href="https://steamcommunity.com/id/Minot_/" target="_blank" id="button-nav">steam</a>
-    </Tooltip>
-    <Tooltip text="music stuff">
-        <a href="https://bandcamp.com/jestors" target="_blank" id="button-nav">bandcamp</a>
-    </Tooltip>
-    
-    <br>
+    <div class="sticky top-2.5">
+        <Tooltip text="@udu3324" paste="udu3324">
+            <span id="button-nav">discord</span>
+        </Tooltip>
+        <Tooltip text="primary">
+            <a href="https://github.com/udu3324" target="_blank" id="button-nav">github</a>
+        </Tooltip>
+        <Tooltip text="dead">
+            <a href="https://www.youtube.com/@udu3324" target="_blank" id="button-nav">youtube</a>
+        </Tooltip>
+        <Tooltip text="games i got">
+            <a href="https://steamcommunity.com/id/Minot_/" target="_blank" id="button-nav">steam</a>
+        </Tooltip>
+        <Tooltip text="music stuff">
+            <a href="https://bandcamp.com/jestors" target="_blank" id="button-nav">bandcamp</a>
+        </Tooltip>
 
-    <Tooltip text="❤️">
-        <a href="https://ko-fi.com/udu3324"  target="_blank" id="button-nav">ko-fi</a>
-    </Tooltip>
-    
+        <br>
+
+        <Tooltip text="❤️">
+            <a href="https://ko-fi.com/udu3324"  target="_blank" id="button-nav">ko-fi</a>
+        </Tooltip>
+    </div>
 </div>
 
 <style>
@@ -55,5 +56,4 @@ import Tooltip from "./Tooltip.astro";
         @apply hover:underline decoration-2;
         color: var(--accent-lighter);
     }
-
 </style>

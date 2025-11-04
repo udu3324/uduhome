@@ -11,10 +11,10 @@ if (tags) {
 ---
 
 <a href={url} target="_blank">
-    <div id="post">
+    <div id="post" class="group">
         <Image src={img} alt="stm32pe"/>
         <div class="p-3">
-            <span class="font-bold">{title}</span>
+            <span class="font-bold group-hover:underline decoration-2">{title}</span>
             <br>
             <span class="text-sm">{description}</span>
             <div class="flex flex-wrap">
@@ -34,7 +34,7 @@ if (tags) {
     @reference "tailwindcss";
 
     #post {
-        @apply bg-black/50 w-62
+        @apply bg-black/50 w-62 hover:bg-black/80
     }
 
     @media only screen and (max-width: 700px) {

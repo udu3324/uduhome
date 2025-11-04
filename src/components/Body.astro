@@ -1,16 +1,9 @@
 ---
-import Project from "./Project.astro";
 
-import stm32pe from '../assets/projects/stm32pe.jpg'
-import typsnd from '../assets/projects/typsnd.png'
-import mp3mark from '../assets/projects/mp3mark.png'
-import gridfix from '../assets/projects/gridfix.png'
-import slider from '../assets/projects/slider-synth.png'
-import gift from '../assets/projects/gift-tag.jpg'
-import cirtemosi from '../assets/projects/cirtemosi.png'
-import Music from "./Music.astro";
 import IconList from "./IconList.astro";
-
+import MusicList from "./MusicList.astro";
+import ProjectList from "./ProjectList.astro";
+import ResearchPaperList from "./ResearchPaperList.astro";
 
 ---
 
@@ -27,111 +20,36 @@ import IconList from "./IconList.astro";
         Hello! I go by my screen name udu3324 or udu for short. 
         You can find all of the platforms I use on the right. 
         I create things ranging from minecraft mods to 
-        fun/useful electronic devices. 
+        fun/useful electronic devices.
     </p>
+    
     
     <h1>Technology</h1>
     <p>
         I have some knowledge in these things below
-        <IconList/>
     </p>
+    <IconList/>
+
 
     <h1>Projects I've Worked On</h1>
     <p>
-        Here are some select projects that I feel proud of the most. You can find more of my projects on GitHub. If you really like my stuff I make, consider starring the repository to support me!
+        Here are some projects that I've worked on. You can find more of them on my GitHub. If you really like the stuff I make, consider starring the repository!
     </p>
-    <div class="flex flex-wrap gap-3 pt-2">
-        <Project
-            img={stm32pe} 
-            title="stm32pe midi controller" 
-            description="a midi controller that is more expressive than usual" 
-            url="https://github.com/udu3324/stm32pe-midi"
-            tags={["hardware", "music"]}
-        />
-        <Project
-            img={mp3mark} 
-            title="mp3mark" 
-            description="a website that lets you mark up mp3 files" 
-            url="https://github.com/udu3324/mp3mark"
-            tags={["website", "music"]}
-        />
-        <Project
-            img={typsnd} 
-            title="typsnd" 
-            description="a nodejs chat app that looks like a popular messaging app" 
-            url="https://github.com/udu3324/typsnd"
-            tags={["website", "chatting"]}
-        />
-        <Project
-            img={gridfix} 
-            title="gridfix" 
-            description="a mod that renders a grid for referencing stuff" 
-            url="https://github.com/udu3324/gridfix"
-            tags={["minecraft", "utility"]}
-        />
-        <Project
-            img={gift} 
-            title="gift tag" 
-            description="a neat twist on the typical gift tags used on presents" 
-            url=""
-            tags={["hardware", "fun"]}
-        />
-    </div>
+    <ProjectList/>
+
 
     <h1>Random Research Papers</h1>
     <p>
-        Over time I have found research papers that are pretty neat. Check them out below
-        <br>
-        <br>
-        <a id="research-link" href="https://doi.org/10.48550/arXiv.2502.15840" target="_blank">Vending-Bench: A Benchmark for Long-Term Coherence of Autonomous Agents</a>
-        <br>
-        <a id="research-link" href="https://doi.org/10.21203/rs.3.rs-4345687/v1" target="_blank">Bioaccumulation of Microplastics in Decedent Human Brains Assessed by Pyrolysis Gas Chromatography-Mass Spectrometry</a>
-        <br>
-        <a id="research-link" href="https://doi.org/10.1145/3517217" target="_blank">Cognitive biases in software development</a>
-        <br>
-        <a id="research-link" href="https://doi.org/10.1088/1748-0221/20/05/p05021" target="_blank">Microfacet models for refraction through rough surfaces</a>
-        <br>
-        <a id="research-link" href="https://doi.org/10.1080/23808985.2021.1976070" target="_blank">The role of (social) media in political polarization: a systematic review</a>
+        Over time, I have found research papers that are pretty neat. Check them out below
     </p>
+    <ResearchPaperList/>
+
 
     <h1>Great Music</h1>
-    <div class="flex flex-wrap gap-3 pt-2">
-        <Music
-            mbid="58451dd7-e0dc-48f3-bc22-76c332e1e07e"
-            url="https://lifeformed.bandcamp.com/album/fastfall"
-            commentary="iconic, insert chubbyemu references here"
-        />
-        <Music
-            mbid="dc5e566b-ac5a-4ea6-8faa-82f193b086dd"
-            url="https://flumemusic.bandcamp.com/album/hi-this-is-flume-mixtape"
-            commentary="electronic and experimental in the best way"
-        />
-        <Music
-            mbid="c062737f-a5af-4119-84a6-d8b105801f75"
-            url="https://mortgarson.bandcamp.com/album/mother-earths-plantasia"
-            commentary="great for relaxing, pioneer of electronic music"
-        />
-        <Music
-            mbid="b32baec6-4edd-4286-b323-2dea67c411d1"
-            url="https://paracadute.bandcamp.com/album/and-the-adjacent-possible"
-            commentary="good experimental rock"
-        />
-        <Music
-            mbid="5575a447-0d0f-47bd-94d7-0a6d4c298c24"
-            url="https://bloodcultures.bandcamp.com/album/oh-uncertainty-a-universe-despairs"
-            commentary="the vibes are interesting in this"
-        />
-        <Music
-            mbid="12eff34f-f0a1-474e-a746-23dc70c99fbf"
-            url="https://rateyourmusic.com/release/album/madeon/good-faith/"
-            commentary="best french electronic music ive ever heard"
-        />
-        <Music
-            mbid="e2cc165d-b935-4e7c-8728-77cf01ab21ed"
-            url="https://rateyourmusic.com/release/album/porter-robinson/nurture/"
-            commentary="made covid era peak"
-        />
-    </div>
+    <p>
+        I listen to a bunch of alternative and indie stuff. Below are some picks I highly recommend! 
+    </p>
+    <MusicList/>
 </div>
 
 <style>
@@ -152,14 +70,6 @@ import IconList from "./IconList.astro";
     }
 
     h1 {
-        @apply text-xl font-bold pt-5
-    }
-
-    #research-link {
-        @apply hover:underline decoration-2;
-    }
-
-    #research-link:hover {
-        color: var(--accent-lighter)
+        @apply text-xl font-bold pt-8
     }
 </style>

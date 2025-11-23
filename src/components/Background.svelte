@@ -29,10 +29,10 @@
 
         document.documentElement.style.cssText = "--accent-color: " + backgrounds[background].accent
 
-        console.log("matched image paths: ", Object.keys(images));
+        //console.log("matched image paths: ", Object.keys(images));
         
-        console.log("loading background")
-        console.log(backgrounds[background])
+        //console.log("loading background")
+        //console.log(backgrounds[background])
     })
 </script>
 

@@ -51,9 +51,6 @@
 
 <style lang="postcss">
     #bg-render {
-        image-rendering: pixelated;
-        image-rendering: crisp-edges;
-        image-rendering: pixelated;
         @apply w-screen h-screen object-cover;
     }
 </style>

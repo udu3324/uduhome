@@ -11,7 +11,7 @@ const images = import.meta.glob("../assets/icons/*.png", { eager: true })
 <div class="flex flex-wrap leading-none pt-2">
 {
     Object.entries(images).map(([path, img]) => (
-        <div class="pr-1 w-8 h-8">
+        <div class="pr-1 w-9 h-9">
             <Tooltip text={path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."))}>
                 <Image
                     src={img.default}

@@ -50,6 +50,6 @@
     }
     
     .shape:hover {
-        background-color: color-mix(in srgb, var(--accent-color) 80%, transparent);
+        background-color: color-mix(in srgb, var(--accent-color) 90%, transparent);
     }
 </style>

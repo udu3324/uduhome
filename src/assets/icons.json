@@ -1,0 +1,212 @@
+[
+    {
+        "match": "ableton.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "arduino.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "blender.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "cinema 4d.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "cli.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "css.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "discord.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "docker.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "espressif.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "foobar.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "fusion360.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "github.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "godot.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "hack club.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "html.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "intellij.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "java.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "js.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "kdenlive.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "kicad.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "kopia.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "krita.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "minecraft.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "notepad++.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "onshape.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "osu.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "paintdotnet.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "premiere pro.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "prusaslicer.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "raspberry pi os.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "react.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "realityscan.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "scenebuilder.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "slack.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "stmicroelectronics.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "supabase.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "svelte.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "texas instruments.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "ubuntu.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "vercel.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "vscode.png",
+        "proficiency": [""],
+        "note": ""
+    },
+    {
+        "match": "windows 10.png",
+        "proficiency": [""],
+        "note": ""
+    }
+]

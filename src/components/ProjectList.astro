@@ -10,27 +10,13 @@ import gift from '../assets/projects/gift-tag.jpg'
 import cirtemosi from '../assets/projects/cirtemosi.png'
 ---
 
-<div class="flex flex-wrap gap-3 pt-2">
+<div class="columns-1 sm:columns-2 lg:columns-3 gap-3 pt-2">
     <Project
         img={stm32pe} 
         title="stm32pe midi controller" 
         description="a midi controller that is more expressive than usual" 
         url="https://github.com/udu3324/stm32pe-midi"
         tags={["hardware", "music"]}
-    />
-    <Project
-        img={mp3mark} 
-        title="mp3mark" 
-        description="a website that lets you mark up mp3 files" 
-        url="https://github.com/udu3324/mp3mark"
-        tags={["website", "music"]}
-    />
-    <Project
-        img={typsnd} 
-        title="typsnd" 
-        description="a nodejs chat app that looks like a popular messaging app" 
-        url="https://github.com/udu3324/typsnd"
-        tags={["website", "chatting"]}
     />
     <Project
         img={gridfix} 
@@ -40,10 +26,24 @@ import cirtemosi from '../assets/projects/cirtemosi.png'
         tags={["minecraft", "utility"]}
     />
     <Project
+        img={mp3mark} 
+        title="mp3mark" 
+        description="a website that lets you mark up mp3 files" 
+        url="https://github.com/udu3324/mp3mark"
+        tags={["website", "music"]}
+    />
+    <Project
         img={gift} 
         title="gift tag" 
         description="a neat twist on the typical gift tags used on presents" 
-        url=""
+        url="#"
         tags={["hardware", "fun"]}
+    />
+    <Project
+        img={typsnd} 
+        title="typsnd" 
+        description="a nodejs chat app that looks like a popular messaging app" 
+        url="https://github.com/udu3324/typsnd"
+        tags={["website", "chatting"]}
     />
 </div>

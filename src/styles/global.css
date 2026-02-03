@@ -110,3 +110,8 @@
   --accent-muted: hsl(from var(--accent-color) h calc(s - 30) l);
   --accent-vibrant: hsl(from var(--accent-color) h calc(s + 20) l);
 }
+
+::selection {
+  background-color: var(--accent-lighter);
+  color: var(--accent-darker);
+}

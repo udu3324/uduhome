@@ -11,16 +11,16 @@ if (tags) {
 ---
 
 <a href={url} target="_blank" class="block mb-3 break-inside-avoid">
-    <div id="post" class="group">
-        <Image id="post-image" class="aspect-auto w-62" src={img} alt="stm32pe" loading="eager"/>
+    <div class="project group">
+        <Image class="project-image aspect-auto w-62" src={img} alt="stm32pe" loading="eager"/>
         <div class="p-3">
             <span class="font-bold group-hover:underline decoration-2">{title}</span>
             <br>
-            <span id="post-description" class="text-sm">{description}</span>
-            <div id="post-tags" class="flex flex-wrap">
+            <span class="project-description text-sm">{description}</span>
+            <div class="project-tags flex flex-wrap">
                 {
                     tagP.map((tag: string) => (
-                        <div id="tag">
+                        <div class="tag">
                             <span>{tag}</span>
                         </div>
                     ))
@@ -33,27 +33,27 @@ if (tags) {
 <style>
     @reference "tailwindcss";
 
-    #post {
+    .project {
         @apply bg-black/50 w-62 hover:bg-black/80
     }
 
     @media only screen and (max-width: 700px) {
-        #post {
+        .project {
             @apply w-48
         }
 
-        #post-image {
+        .project-image {
             @apply w-48
         }
     }
 
     @media only screen and (max-width: 480px) {
-        #post-description {
+        .project-description {
             @apply text-xs
         }
     }
 
-    #tag {
+    .tag {
         @apply mr-1 mt-1 px-2 rounded-full font-bold;
         background-color: var(--accent-darker);
         color: var(--accent-lighter);

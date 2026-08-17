@@ -12,9 +12,9 @@ let date = getDate() || import.meta.env.VITE_COMMIT_DATE || "date n/a"
 let url = `https://github.com/udu3324/uduhome/commit/${commitHash}`
 ---
 
-<div class="bg-stone-950/80 backdrop-blur-md text-white mt-32 p-5 mx-3">
+<div class="bg-stone-950/80 backdrop-blur-md text-white mt-32 p-5">
 
-    <div id="pagering" class="absolute top-5 left-5 z-20">
+    <div class="pagering absolute top-5 left-5 z-20">
         <pagering-link theme="dark"></pagering-link>
     </div>
     
@@ -25,9 +25,9 @@ let url = `https://github.com/udu3324/uduhome/commit/${commitHash}`
     <Tooltip text="you are a certified nerd btw">
         <a href={url} target="_blank" class="hover:underline decoration-2 decoration-wavy">
             commit 
-            <span id="code">{commitHash.slice(0, 7)} </span>
+            <span class="code">{commitHash.slice(0, 7)} </span>
             @
-            <span id="code">{date}</span>
+            <span class="code">{date}</span>
         </a>
     </Tooltip>
     <div>
@@ -43,12 +43,12 @@ let url = `https://github.com/udu3324/uduhome/commit/${commitHash}`
         color: var(--accent-color)
     }
 
-    #code {
+    .code {
         color: var(--accent-lighter)
     }
 
     @media only screen and (max-width: 480px) {
-      #pagering {
+      .pagering {
         @apply hidden
       }
     }

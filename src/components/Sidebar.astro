@@ -2,35 +2,35 @@
 import Tooltip from "./Tooltip.astro";
 ---
 
-<div class="ml-3 p-3 bg-stone-950/50 backdrop-blur-xs flex flex-col">
+<div class="p-3 bg-stone-950/50 backdrop-blur-xs flex flex-col">
     <div>
-        <a href="." aria-label="Go home"><div id="accent-cube" class="mb-14"/></a>
+        <a href="." aria-label="Go home"><div class="accent-cube mb-14"/></a>
     </div>
 
     <div class="sticky top-2.5">
         <Tooltip text="@udu3324" paste="udu3324">
-            <span id="button-nav">discord</span>
+            <span class="button-nav">discord</span>
         </Tooltip>
         <Tooltip text="code">
-            <a href="https://github.com/udu3324" target="_blank" id="button-nav">github</a>
+            <a href="https://github.com/udu3324" target="_blank" class="button-nav">github</a>
         </Tooltip>
         <Tooltip text="mc mods">
-            <a href="https://modrinth.com/user/udu3324" target="_blank" id="button-nav">modrinth</a>
+            <a href="https://modrinth.com/user/udu3324" target="_blank" class="button-nav">modrinth</a>
         </Tooltip>
         <Tooltip text="vids">
-            <a href="https://www.youtube.com/@udu3324" target="_blank" id="button-nav">youtube</a>
+            <a href="https://www.youtube.com/@udu3324" target="_blank" class="button-nav">youtube</a>
         </Tooltip>
         <Tooltip text="games">
-            <a href="https://steamcommunity.com/id/Minot_/" target="_blank" id="button-nav">steam</a>
+            <a href="https://steamcommunity.com/id/Minot_/" target="_blank" class="button-nav">steam</a>
         </Tooltip>
         <Tooltip text="music">
-            <a href="https://bandcamp.com/jestors" target="_blank" id="button-nav">bandcamp</a>
+            <a href="https://bandcamp.com/jestors" target="_blank" class="button-nav">bandcamp</a>
         </Tooltip>
 
         <br>
 
         <Tooltip text="❤️">
-            <a href="https://ko-fi.com/udu3324"  target="_blank" id="button-nav">ko-fi</a>
+            <a href="https://ko-fi.com/udu3324"  target="_blank" class="button-nav">ko-fi</a>
         </Tooltip>
     </div>
 </div>
@@ -38,30 +38,26 @@ import Tooltip from "./Tooltip.astro";
 <style>
     @reference "tailwindcss";
 
-    #accent-cube {
+    .accent-cube {
         @apply w-24 h-24 rounded-lg;
         background-color: var(--accent-color)
     }
 
-    #button-nav {
+    .button-nav {
         @apply w-24 text-white cursor-pointer text-right font-bold;
         @apply hover:underline decoration-2;
         color: var(--accent-lighter);
     }
 
     @media only screen and (max-width: 700px) {
-        #accent-cube {
+        .accent-cube {
             @apply mb-6
         }
     }
 
     @media only screen and (max-width: 480px) {
-        #accent-cube {
-            @apply w-18 h-18
-        }
-
-        #accent-cube {
-            @apply mb-9
+        .accent-cube {
+            @apply w-18 h-18 mb-9
         }
     }
 </style>

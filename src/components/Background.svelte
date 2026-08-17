@@ -42,7 +42,7 @@
     {:else}
     <img
         src={backgrounds[background].url}
-        id="bg-render"
+        class="bg-render"
         loading="lazy"
         alt={backgrounds[background].alt}
     />
@@ -50,7 +50,7 @@
 </div>
 
 <style lang="postcss">
-    #bg-render {
+    .bg-render {
         @apply w-screen h-screen object-cover;
     }
 </style>

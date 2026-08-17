@@ -11,7 +11,7 @@ const images = import.meta.glob("../assets/icons/*.png", { eager: true })
 <div class="flex flex-wrap leading-none pt-2">
 {
     Object.entries(images).map(([path, img]) => (
-        <div id="icon-image" class="pr-1 w-9 h-9">
+        <div class="icon-image pr-1 w-9 h-9">
             <Tooltip text={path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."))}>
                 <Image
                     src={img.default}
@@ -30,7 +30,7 @@ const images = import.meta.glob("../assets/icons/*.png", { eager: true })
     @reference "tailwindcss";
 
     @media only screen and (max-width: 480px) {
-        #icon-image {
+        .icon-image {
             @apply w-7 h-7
         }
     }

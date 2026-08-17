@@ -1,17 +1,19 @@
 ---
-import Body from "./Body.astro";
-import Bottom from "./Bottom.astro";
+import Header from "./Header.astro";
 import Sidebar from "./Sidebar.astro";
+import Body from "./Body.astro";
+import Footer from "./Footer.astro";
 ---
 
-<div class="absolute z-10 flex justify-center-safe w-full">
-    <div class="w-[60rem] mt-52">
+<div class="flex h-full flex-col items-center justify-center-safe">
+    <Header/>
+
+    <div class="flex h-full w-full max-w-[60rem] flex-col px-3">
         <div class="flex">
             <Sidebar/>
-
             <Body/>
         </div>
 
-        <Bottom/>
+        <Footer/>
     </div>
 </div>

@@ -7,9 +7,9 @@ import ResearchPaperList from "./ResearchPaperList.astro";
 
 ---
 
-<div id="body-div" class="bg-stone-950/70 backdrop-blur-xs text-white w-full mr-3 p-5">
-    <span id="reactive-text-size">@udu<span class="text-gray-200">3324</span></span>
-    <span title="pronounced as 'you do you'" id="pronounce" class="font-mono">/juːdiːjuː/</span>
+<div class="body-div bg-stone-950/70 backdrop-blur-xs text-white w-full p-5">
+    <span class="reactive-text-size">@udu<span class="text-gray-200">3324</span></span>
+    <span title="pronounced as 'you do you'" class="pronounce font-mono">/juːdiːjuː/</span>
     <br>
     <br>
     <p class="italic">“i create random things”</p>
@@ -55,21 +55,21 @@ import ResearchPaperList from "./ResearchPaperList.astro";
 <style>
     @reference "tailwindcss";
 
-    #pronounce {
+    .pronounce {
         color: var(--accent-darker);
     }
 
-    #reactive-text-size {
+    .reactive-text-size {
         @apply text-7xl font-bold
     }
 
     @media only screen and (max-width: 700px) {
-        #reactive-text-size {
+        .reactive-text-size {
             @apply text-4xl
         }
     }
     @media only screen and (max-width: 480px) {
-        #body-div {
+        .body-div {
             @apply py-5 px-3
         }
     }

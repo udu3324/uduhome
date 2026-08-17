@@ -8,7 +8,7 @@ let img = `https://coverartarchive.org/release-group/${mbid}/front-250`
 ---
 
 <a href={url} target="_blank">
-    <div id="post" class="relative group w-[185px] h-[185px]">
+    <div id="post" class="relative group w-46 h-46">
         <div class="p-2 absolute hidden group-hover:block bg-black/80 w-full">
             <span class="text-sm italic">“{commentary}”</span>
         </div>
@@ -27,5 +27,11 @@ let img = `https://coverartarchive.org/release-group/${mbid}/front-250`
 
     #post {
         background-color: var(--accent-darker);
+    }
+
+    @media only screen and (max-width: 480px) {
+        #post {
+            @apply w-24 h-24
+        }
     }
 </style>

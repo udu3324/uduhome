@@ -7,7 +7,7 @@ import ResearchPaperList from "./ResearchPaperList.astro";
 
 ---
 
-<div class="bg-stone-950/70 backdrop-blur-xs text-white w-full p-5 mr-3">
+<div id="body-div" class="bg-stone-950/70 backdrop-blur-xs text-white w-full mr-3 p-5">
     <span id="reactive-text-size">@udu<span class="text-gray-200">3324</span></span>
     <span title="pronounced as 'you do you'" id="pronounce" class="font-mono">/juːdiːjuː/</span>
     <br>
@@ -66,6 +66,11 @@ import ResearchPaperList from "./ResearchPaperList.astro";
     @media only screen and (max-width: 700px) {
         #reactive-text-size {
             @apply text-4xl
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        #body-div {
+            @apply py-5 px-3
         }
     }
 

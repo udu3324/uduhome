@@ -12,12 +12,12 @@ if (tags) {
 
 <a href={url} target="_blank" class="block mb-3 break-inside-avoid">
     <div id="post" class="group">
-        <Image src={img} alt="stm32pe" loading="eager"/>
+        <Image id="post-image" class="aspect-auto w-62" src={img} alt="stm32pe" loading="eager"/>
         <div class="p-3">
             <span class="font-bold group-hover:underline decoration-2">{title}</span>
             <br>
-            <span class="text-sm">{description}</span>
-            <div class="flex flex-wrap">
+            <span id="post-description" class="text-sm">{description}</span>
+            <div id="post-tags" class="flex flex-wrap">
                 {
                     tagP.map((tag: string) => (
                         <div id="tag">
@@ -40,6 +40,16 @@ if (tags) {
     @media only screen and (max-width: 700px) {
         #post {
             @apply w-48
+        }
+
+        #post-image {
+            @apply w-48
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        #post-description {
+            @apply text-xs
         }
     }
 

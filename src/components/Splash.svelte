@@ -52,4 +52,12 @@
     .shape:hover {
         background-color: color-mix(in srgb, var(--accent-color) 90%, transparent);
     }
+
+    @media only screen and (max-width: 700px) {
+        .shape {
+            width: calc(440px / 1.3);
+            height: calc(90px / 1.3);
+            background-color: var(--accent-color);
+        }
+    }
 </style>

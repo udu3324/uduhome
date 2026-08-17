@@ -115,3 +115,9 @@
   background-color: var(--accent-lighter);
   color: var(--accent-darker);
 }
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: small;
+  }
+}
